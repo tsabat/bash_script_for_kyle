@@ -2,8 +2,8 @@
 
 ######################################################################
 # Goal:
-# if $IS_STAGE is set, move the stage config to /tmp/values.conf
-# if $IS_STAGE is absent, move the prod config to /tmp/values.conf
+# if $STAGE is set and equal to staging, move the stage config to /tmp/values.conf
+# otherwise, move the prod config to /tmp/values.conf
 ######################################################################
 
 function writeProductionValues() {
