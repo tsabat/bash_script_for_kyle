@@ -14,7 +14,7 @@ function writeStageValues() {
   cp stage_values.conf /tmp/values.conf
 }
 
-if [[ "$STAGE" = 'stage'  ]]; then
+if [[ "$STAGE" = 'staging'  ]]; then
   writeStageValues
 else
   writeProductionValues
